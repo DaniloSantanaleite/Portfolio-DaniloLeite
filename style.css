@@ -23,7 +23,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    background-color: rgba(0, 0, 0, 0.473);
+    background-color: rgba(0, 0, 0, 0.712);
     backdrop-filter: blur(8px);
     color: white;
     padding: 0.5rem 1.5rem;
@@ -32,7 +32,7 @@ header{
 }
 
 header:hover{
-    background-color: rgba(0, 0, 0, 0.712);
+    background-color: rgba(0, 0, 0, 0.473)
 
 }
 .logo{
