@@ -100,7 +100,6 @@ li a:hover::before{
     display: none;
 
 }
-
 /* ---- BARRA DE NAVEGAÇÃO TOPO - FIM ---- */
 
 
@@ -123,11 +122,31 @@ section{
     justify-content: center;
     gap: 10rem;
 }
+/* ---- LEVITAÇÃO IMG - INÍCIO ---- */
+.about-container img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    animation: float 4s ease-in-out infinite;
+}
 
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
 .about img {
     width: 30vw;
     border-radius: 50%;
 }
+
+/* ---- LEVITAÇÃO IMG - FIM ---- */
 .info-box{
     display: flex;
     flex-direction: column;
@@ -141,10 +160,12 @@ section{
     font-weight: 400;
     opacity: 0.8;   
 }
+
 .info-box h1{
     font-size:  2.5rem;
     font-weight: 550;
 }
+
 .info-box span{
     background: linear-gradient(to right, #5cc6f7,#1ebd1e);
     background-clip: text;
@@ -209,8 +230,8 @@ section{
 }
 
 .experience img {
-    width: 24vw;
-    border-radius: 3rem;
+    width: 18vw;
+    border-radius: 5rem;
 }
 .grid{
     display: grid;
